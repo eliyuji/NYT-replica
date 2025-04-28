@@ -53,6 +53,13 @@
 </script>
 
 <!-- Header -->
+ <div class= "languageBar">
+  <p>U.S.</p>
+  <p>INTERNATIONAL</p>
+  <p>CANADA</p>
+  <p>ESPANOL</p>
+  <p>中文</p>
+ </div>
 <header class="header">
   <div class="dateTime" id="dateTime">{new Date().toLocaleDateString()} 
     <p>Today's Paper</p>
@@ -62,6 +69,7 @@
 </header>
 
 <!-- Navigation bar -->
+ <div class="doubleBorder"></div>
 <nav class="navBar">
   <p>U.S.</p>
   <p>World</p>

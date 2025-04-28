@@ -91,6 +91,7 @@
   {:else}
       <div class="columnContainer">
         <div class="column1">
+<!-- Ref: https://graphite.dev/guides/typescript-forEach-loop -->
           {#each c1 as news(news.url)}
             <article class = "newArticle">
               {#if news.picture}

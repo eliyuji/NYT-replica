@@ -23,9 +23,9 @@
     const data = await res.json();
     apiKey = data.apiKey;
 
-    const articleRes = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Sacramento&api-key=${apiKey}`);
-    const articleData = await articleRes.json();
-    const docs = articleData.response.docs;
+    const arRes = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=timesTag.location%3A("Davis"%20OR%20"Sacramento")&api-key=${apiKey}`);
+    const arData = await arRes.json();
+    const docs = arData.response.docs;
     //populating 1 list with data
     catalog = docs.map((doc: any) => {
     let imageUrl = doc.multimedia?.default?.url

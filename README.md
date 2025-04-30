@@ -1,4 +1,4 @@
-## How to Run Unit Testing Files:
+## How to Run Unit Testing Files: `test_app.py`,`article-utils.test.ts`, and `article-utils.ts` (isolation testing)
 Navigate to the root dir of the project and run the following commands
 ### Backend:
 ```

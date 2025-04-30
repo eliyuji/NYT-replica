@@ -25,3 +25,4 @@ def test_apikey_not_set(client):
     assert "apiKey" in data
     assert data["apiKey"] is None or isinstance(data["apiKey"], str)
 
+

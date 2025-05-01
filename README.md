@@ -16,6 +16,7 @@ Citation:
 ### Frontend (Testing if article data is being fetched correctly and turned into Article objects)
 ```
 cd frontend
+npm install
 npm install -D vitest
 npx vitest run
 ```

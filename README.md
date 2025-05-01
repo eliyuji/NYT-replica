@@ -1,6 +1,6 @@
 ## How to Run Unit Testing Files: `test_app.py`, `myTest.cy.ts`,`article-utils.test.ts`, and `article-utils.ts` (isolation testing)
 Navigate to the root dir of the project and run the following commands
-### Backend:
+### Backend: (Folder: backend)
 ```
 pip install pytest
 cd backend
@@ -22,7 +22,7 @@ npx vitest run
 The first 2 tests check if the raw data fetched from the API can be correctly transformed into Article objects with their attributes: title, URL, image. Covers for cases where the article does/does not have an image associated.
 The third test checks whether the URL string used by fetch contains Davis and Sacramento. Verify that the correct query keywords are included in the API call.
 
-### Cypress Testing for UI Responsiveness (Media Query CSS formatting):
+### Cypress Testing for UI Responsiveness (Media Query CSS formatting): (Folder: frontend)
 Navigate to root folder then run:
 ```
 npm install --save-dev cypress
@@ -41,8 +41,7 @@ npx cypress run --spec "cypress/e2e/**/*.cy.ts"
 The 3 unit tests demonstrate whether or not the column formatting is reponsive according to the media query specs. It does so by simulating different pixel sizes using `cy.viewport`
  citation : [Cypress](https://docs.cypress.io/app/end-to-end-testing/writing-your-first-end-to-end-test)
 
- The following code is to address some dependency issues that could come up:
-
+The following code is to address some dependency issues that could come up:
 ```
 npm install --save-dev @testing-library/svelte
 reference: https://www.npmjs.com/package/@testing-library/svelte
@@ -57,6 +56,7 @@ npm install --save-dev @testing-library/jest-dom
 ```
 Since when I simulate the website, I got an error as document not define. Then I search on google trying to debug. This will make Svelte simulated API to support DOM operations when using jsdom as the default environment
 reference: https://github.com/sveltejs/svelte/issues/11394
+
 ```
 npx run test
 ```

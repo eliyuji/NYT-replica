@@ -4,6 +4,14 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [svelte()],
+  resolve: {
+    conditions: mode === 'test' ? ['browser'] : [],
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom', 
+    setupFiles: ['./src/setupTests.ts'],
+  },
   server: mode === 'development' ? {
     proxy: {
       '/api': {
@@ -16,6 +24,7 @@ export default defineConfig(({ mode }) => ({
           })
         }
       },
-    },
-  } : undefined,
+    }
+  } : undefined
 }))
+

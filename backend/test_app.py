@@ -13,7 +13,7 @@ def test_apikey():
     assert data == {"apiKey": "test_api_key"}
 
 
-def test_apikey_not_set():
+def test_apikey_notset():
     app.config['TESTING'] = True
     client = app.test_client()  
     if 'NYT_API_KEY' in os.environ:

@@ -31,6 +31,8 @@ npm install --save-dev typescript
 In a new terminal run(Folder: NYT-REPLICA-MAIN):
 ```
 docker compose -f docker-compose.dev.yml up --build
+
+docker compose -f docker-compose.prod.yml up --build
 ```
 Go back to first terminal and navigate to frontend then run(Folder: frontend):
 ```

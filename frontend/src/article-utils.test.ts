@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { test, describe, it, expect } from 'vitest';
 import { mappingDocsToArticles,  type Article } from './article-utils';
 //reference: https://vitest.dev/api/
 

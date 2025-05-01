@@ -1,5 +1,7 @@
 import { test, describe, it, expect } from 'vitest';
 import { mappingDocsToArticles,  type Article } from './article-utils';
+import { render } from './my-render-function.js'
+
 //reference: https://vitest.dev/api/
 
 describe('mappingDocsToArticles', () => {

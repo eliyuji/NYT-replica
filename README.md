@@ -1,5 +1,15 @@
 ## How to Run Unit Testing Files: `test_app.py`, `myTest.cy.ts`,`article-utils.test.ts`, and `article-utils.ts` (isolation testing)
-Navigate to the root dir of the project and run the following commands
+To simply run the webpage, navigate to root of project file and run:
+```
+npm install
+docker compose -f docker-compose.dev.yml up --build
+```
+or
+```
+docker compose -f docker-compose.prod.yml up --build
+```
+To run Unit Tests:
+Navigate to the root dir of the project and run the following commands:
 ### Backend: (Folder: backend)
 ```
 pip install pytest

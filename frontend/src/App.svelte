@@ -23,7 +23,7 @@
     const data = await res.json();
     apiKey = data.apiKey;
 
-    const articleRes = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Sacramento&api-key=${apiKey}`);
+    const articleRes = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Sacramento%20AND%20Davis&api-key=${apiKey}`);
     const articleData = await articleRes.json();
     const docs = articleData.response.docs;
     //populating 1 list with data

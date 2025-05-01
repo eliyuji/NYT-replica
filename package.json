@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@types/node": "^22.15.3",
+    "cypress": "^14.3.2",
     "vitest": "^3.1.2"
   }
 }

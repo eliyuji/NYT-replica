@@ -13,7 +13,7 @@ Citation:
 [pytest](https://docs.pytest.org/en/6.2.x/reference.html#pytest-fixture)
 
 
-### Frontend:
+### Frontend (Testing if article data is being fetched correctly and turned into Article objects)
 ```
 npm install -D vitest
 npx vitest run
@@ -21,7 +21,7 @@ npx vitest run
 The first 2 tests check if the raw data fetched from the API can be correctly transformed into Article objects with their attributes: title, URL, image. Covers for cases where the article does/does not have an image associated.
 The third test checks whether the URL string used by fetch contains Davis and Sacramento. Verify that the correct query keywords are included in the API call.
 
-###Cypress Testing for UI Responsiveness:
+### Cypress Testing for UI Responsiveness (Media Query CSS formatting):
 Navigate to root folder then run:
 ```
 npm install --save-dev cypress

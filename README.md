@@ -28,11 +28,11 @@ Navigate to root folder then run:
 npm install --save-dev cypress
 npm install --save-dev typescript
 ```
-In a new terminal run:
+In a new terminal run(Folder: NYT-REPLICA-MAIN):
 ```
 docker compose -f docker-compose.dev.yml up --build
 ```
-Go back to first terminal and navigate to frontend then run:
+Go back to first terminal and navigate to frontend then run(Folder: frontend):
 ```
 npx cypress run --spec "cypress/e2e/**/*.cy.ts"
 ```

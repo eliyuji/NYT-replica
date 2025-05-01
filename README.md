@@ -22,4 +22,4 @@ The first 2 tests check if the raw data fetched from the API can be correctly tr
 The third test checks whether the URL string used by fetch contains Davis and Sacramento. Verify that the correct query keywords are included in the API call.
 
 
-citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal)
+citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal), [vi.waitFor](https://vitest.dev/api/vi.html#vi-spyon)

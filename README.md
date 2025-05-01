@@ -37,7 +37,10 @@ The 3 unit tests demonstrate whether or not the column formatting is reponsive a
 
 ```
 [npm install --save-dev @testing-library/svelte](https://www.npmjs.com/package/@testing-library/svelte)
-
+```
+```
+npm install --save-dev @testing-library/jest-dom
+```
 
 
 citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal), [vi.waitFor](https://vitest.dev/api/vi.html#vi-spyon)

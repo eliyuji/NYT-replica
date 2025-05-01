@@ -10,7 +10,7 @@ The first test is to check when NYT_API_KEY is set, the API should return the co
 The second test is to check when NYT_API_KEY is not set, the API will not fail and it is still safe to return "apiKey" and that one  will be None or an empty string.
 
 Citation: 
-[pytest-fixture](https://docs.pytest.org/en/6.2.x/reference.html#pytest-fixture)
+[pytest](https://docs.pytest.org/en/6.2.x/reference.html#pytest-fixture)
 
 
 ### Frontend:
@@ -22,3 +22,4 @@ The first 2 tests check if the raw data fetched from the API can be correctly tr
 The third test checks whether the URL string used by fetch contains Davis and Sacramento. Verify that the correct query keywords are included in the API call.
 
 
+citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal)

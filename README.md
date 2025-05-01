@@ -47,6 +47,9 @@ npm install jsdom
 ```
 npm install --save-dev @testing-library/jest-dom
 ```
+```
+npx vitest run
+```
 
 
 citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal), [vi.waitFor](https://vitest.dev/api/vi.html#vi-spyon)

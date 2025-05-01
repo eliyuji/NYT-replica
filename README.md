@@ -35,4 +35,10 @@ npx cypress run --spec "cypress/e2e/**/*.cy.ts"
 ```
 The 3 unit tests demonstrate whether or not the column formatting is reponsive according to the media query specs. It does so by simulating different pixel sizes using `cy.viewport`
 
+```
+[npm install --save-dev @testing-library/svelte](https://www.npmjs.com/package/@testing-library/svelte)
+```
+
+
+
 citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal), [vi.waitFor](https://vitest.dev/api/vi.html#vi-spyon)

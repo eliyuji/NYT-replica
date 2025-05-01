@@ -28,7 +28,8 @@
     const docs = arData.response.docs;
     //populating 1 list with data
     catalog = docs.map((doc: any) => {
-    let imageUrl = doc.multimedia?.default?.url
+    let imageUrl = doc.multimedia.url 
+
 
     return {
       picture: imageUrl,

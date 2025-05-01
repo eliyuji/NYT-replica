@@ -1,6 +1,8 @@
-import { test, describe, it, expect } from 'vitest';
+import { test, describe, it, expect, vi  } from 'vitest';
 import { mappingDocsToArticles,  type Article } from './article-utils';
-import { render } from './my-render-function.js'
+import { render } from '@testing-library/svelte';
+import App from './App.svelte';
+
 
 //reference: https://vitest.dev/api/
 

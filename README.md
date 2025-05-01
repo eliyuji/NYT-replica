@@ -36,7 +36,9 @@ Go back to first terminal and navigate to frontend then run:
 npx cypress run --spec "cypress/e2e/**/*.cy.ts"
 ```
 The 3 unit tests demonstrate whether or not the column formatting is reponsive according to the media query specs. It does so by simulating different pixel sizes using `cy.viewport`
+ citation : [Cypress](https://docs.cypress.io/app/end-to-end-testing/writing-your-first-end-to-end-test)
 
+ The following code is to address some dependency issues that could come up:
 
 ```
 npm install --save-dev @testing-library/svelte

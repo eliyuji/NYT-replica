@@ -18,4 +18,7 @@ export default defineConfig(({ mode }) => ({
       },
     },
   } : undefined,
+  test: {
+    environment: 'jsdom',  // This ensures that tests run in a browser-like environment
+  },
 }))

@@ -1,5 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import { test, describe, it, expect, vi } from 'vitest';
 import { mappingDocsToArticles,  type Article } from './article-utils';
+import { render } from '@testing-library/svelte'
+import App from './App.svelte'
 //reference: https://vitest.dev/api/
 
 describe('mappingDocsToArticles', () => {
@@ -41,3 +43,23 @@ describe('mappingDocsToArticles', () => {
       expect(result[0].url).toBe('https://tester2example.com/no-image');
     });
   });
+
+test('Test for query Davis/ SAC ', async () => {
+  const mockTest = vi.fn((url: string) => {
+    if (url === '/api/key') {
+      return Promise.resolve({ json: () => Promise.resolve({ apiKey: 'fakeapi' }) })
+    }
+    return Promise.resolve({
+      json: () => Promise.resolve({ response: { docs: [] } })
+    })
+  })
+
+  vi.stubGlobal('fetch', mockTest)
+  render(App)
+
+  await vi.waitFor(() => {
+    const call = mockTest.mock.calls.find(([url]) => url.includes('api.nytimes.com'))
+    expect(call?.[0]).toMatch(/sacramento/i)
+    expect(call?.[0]).toMatch(/Davis/i)
+  })
+})

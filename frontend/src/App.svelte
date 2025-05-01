@@ -28,7 +28,7 @@
     const docs = articleData.response.docs;
     //populating 1 list with data
     catalog = docs.map((doc: any) => {
-    let imageUrl = doc.multimedia?.default?.url
+    let imageUrl = doc.multimedia?.default?.url 
 
     return {
       picture: imageUrl,
@@ -91,6 +91,7 @@
   {:else}
       <div class="columnContainer">
         <div class="column1">
+<!-- Ref: https://graphite.dev/guides/typescript-forEach-loop -->
           {#each c1 as news(news.url)}
             <article class = "newArticle">
               {#if news.picture}

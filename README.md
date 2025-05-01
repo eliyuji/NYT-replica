@@ -37,19 +37,23 @@ npx cypress run --spec "cypress/e2e/**/*.cy.ts"
 ```
 The 3 unit tests demonstrate whether or not the column formatting is reponsive according to the media query specs. It does so by simulating different pixel sizes using `cy.viewport`
 
+
 ```
 npm install --save-dev @testing-library/svelte
 reference: https://www.npmjs.com/package/@testing-library/svelte
 ```
+This package mainly for "render(App)" in this unit test, which can simulate the webpage and find the element in mock website.
+
 ```
 npm install jsdom
 ```
 ```
 npm install --save-dev @testing-library/jest-dom
 ```
+Since when I simulate the website, I got an error as document not define. Then I search on google trying to debug. This will make Svelte simulated API to support DOM operations when using jsdom as the default environment
+reference: https://github.com/sveltejs/svelte/issues/11394
 ```
-npx vitest run
+npx run test
 ```
-
 
 citation: [vitest](https://vitest.dev/api/vi.html#vi-stubglobal), [vi.waitFor](https://vitest.dev/api/vi.html#vi-spyon)

@@ -12,3 +12,6 @@ export default defineConfig(({ mode }) => ({
     setupFiles: ['./src/setupTests.ts'],
   },
 }));
+
+
+// reference: https://github.com/sveltejs/svelte/issues/11394

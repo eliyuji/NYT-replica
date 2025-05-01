@@ -40,6 +40,9 @@ npm install --save-dev @testing-library/svelte
 reference: https://www.npmjs.com/package/@testing-library/svelte
 ```
 ```
+npm install jsdom
+```
+```
 npm install --save-dev @testing-library/jest-dom
 ```
 

@@ -37,7 +37,6 @@ The 3 unit tests demonstrate whether or not the column formatting is reponsive a
 
 ```
 [npm install --save-dev @testing-library/svelte](https://www.npmjs.com/package/@testing-library/svelte)
-```
 
 
 
